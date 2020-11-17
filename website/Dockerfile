@@ -1,0 +1,4 @@
+FROM nginx:stable-alpine
+RUN apk update && apk upgrade
+RUN rm /etc/nginx/conf.d/default.conf
+COPY ./*.conf /etc/nginx/conf.d/
