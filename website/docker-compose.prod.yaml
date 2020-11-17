@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   web:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile-prod
     image: tobinsoft/tobinsoft:v0.0.1
     ports:
       - "80:80"
