@@ -2,7 +2,7 @@ version: '3.8'
 services:
   web:
     build: .
-    image: tobinsoft/tobinsoft:v0.0.1-dev
+    image: tobinsoft/tobinsoft:v0.0.2-dev
     ports:
       - "8080:80"
       - "8443:443"
