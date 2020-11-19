@@ -4,7 +4,7 @@ services:
     build: .
     image: tobinsoft/tobinsoft:v0.0.2-dev
     ports:
-      - "8080:80"
-      - "8443:443"
+      - "80:80"
+      - "443:443"
     volumes:
       - ./html:/var/www/tobinsoft.net/html
