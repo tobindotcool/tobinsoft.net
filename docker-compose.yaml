@@ -1,10 +1,10 @@
 version: '3.8'
 services:
   web:
-    build: .
+    build: website
     image: tobinsoft/tobinsoft:v0.0.2-dev
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:80"
+      - "8443:443"
     volumes:
-      - ./html:/var/www/tobinsoft.net/html
+      - ./website/html:/var/www/tobinsoft.net/html
