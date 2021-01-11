@@ -1,15 +1,6 @@
 version: '3.8'
 services:
   web:
-<<<<<<< HEAD
-    build: website
-    image: tobinsoft/tobinsoft:v0.0.2-dev
-    ports:
-      - "8080:80"
-      - "8443:443"
-    volumes:
-      - ./website/html:/var/www/tobinsoft.net/html
-=======
     build: 
       context: website
     image: tobinsoft/tobinsoft:v0.0.2
@@ -20,4 +11,3 @@ services:
     volumes:
       - /etc/letsencrypt/live/tobinsoft.net:/etc/letsencrypt/live/tobinsoft.net
       - /etc/letsencrypt/archive/tobinsoft.net:/etc/letsencrypt/archive/tobinsoft.net
->>>>>>> prod
