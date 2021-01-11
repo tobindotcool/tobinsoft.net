@@ -11,3 +11,4 @@ services:
     volumes:
       - /etc/letsencrypt/live/tobinsoft.net:/etc/letsencrypt/live/tobinsoft.net
       - /etc/letsencrypt/archive/tobinsoft.net:/etc/letsencrypt/archive/tobinsoft.net
+      - ./website/html:/var/www/tobinsoft.net/html
