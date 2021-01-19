@@ -3,17 +3,18 @@ services:
   web:
     build: 
       context: website
-    image: tobinsoft/website-dev:v0.0.2
+    image: tobinsoft/website-exp:v0.0.2
     ports:
       - "80:80"
       - "443:443"
     restart: unless-stopped
     volumes:
       - ./website/certs:/ssl
-  flask:
+  flask-test:
     build:
-      context: flask
+      context: flask-test
     image: tobinsoft/flask-test
     restart: unless-stopped
     volumes:
       - ./flask/app
+      - ./website/certs:/ssl
